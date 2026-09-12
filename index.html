@@ -103,13 +103,13 @@
   .calc{background:var(--surface);border:1px solid var(--line);margin:0 -20px;padding:28px 20px 30px;
     border-left:0;border-right:0}
   .calc h2{font-family:Oswald,sans-serif;font-weight:600;text-transform:uppercase;font-size:25px;
-    letter-spacing:.02em;margin:0 0 4px;color:#FFFFFF}
+    letter-spacing:.02em;margin:0 0 4px;color:var(--yellow-bright)}
   .calc .hint{color:var(--ink-2);font-size:15.5px;margin:0 0 24px}
-  .uline{border-bottom:2px solid var(--line-2);padding-bottom:4px;display:inline-block}
+  .uline{border-bottom:3px solid var(--yellow);padding-bottom:4px;display:inline-block}
   .btnrow{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-2);margin-top:14px}
   .btnrow .copybtn{margin-top:0;border-top:0}
   .stepnum{font-family:Oswald,sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--muted);display:block;margin-bottom:6px}
+    color:var(--yellow-bright);display:block;margin-bottom:6px}
   .field{margin-bottom:24px}
   .field > .q{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:18px;
     letter-spacing:.03em;color:#FFFFFF;margin:0 0 12px}
@@ -138,6 +138,24 @@
   .levels button[aria-pressed="true"] i{color:rgba(255,255,255,.85)}
   .levels button[aria-pressed="true"] .r{color:#FFFFFF}
   .shifts button:focus-visible,.levels button:focus-visible{outline:2px solid #FFFFFF;outline-offset:2px}
+
+
+  .tap{font-size:13.5px;color:var(--yellow-bright);margin:-6px 0 12px;
+    display:flex;align-items:center;gap:7px}
+  .tap::before{content:"";width:0;height:0;border-left:7px solid var(--yellow);
+    border-top:5px solid transparent;border-bottom:5px solid transparent;flex:none}
+
+  .shifts button{position:relative;padding-top:22px}
+  .shifts button::before{content:"";position:absolute;top:9px;left:50%;transform:translateX(-50%);
+    width:16px;height:16px;border-radius:50%;border:2px solid var(--line-2);box-sizing:border-box}
+  .shifts button[aria-pressed="true"]::before{border-color:#FFFFFF;
+    background:radial-gradient(circle,#FFFFFF 0 4px,transparent 4px)}
+
+  .levels button{grid-template-columns:auto 1fr auto;padding-left:13px}
+  .levels button::before{content:"";width:19px;height:19px;border-radius:50%;
+    border:2px solid var(--line-2);box-sizing:border-box;flex:none}
+  .levels button[aria-pressed="true"]::before{border-color:#FFFFFF;
+    background:radial-gradient(circle,#FFFFFF 0 5px,transparent 5px)}
 
   .readout{border-top:1px solid var(--line);padding-top:24px}
   .readout .cap{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:12px;
@@ -417,11 +435,12 @@
 
   <div class="calc" id="calc">
     <h2>Рассчитай свой заработок</h2>
-    <p class="hint"><span class="uline">Два шага: выбери плашку - дальше цифра посчитается сама</span></p>
+    <p class="hint"><span class="uline">Два шага: нажми на плашки - дальше цифра посчитается сама</span></p>
 
     <div class="field">
       <span class="stepnum">Шаг 1</span>
       <p class="q">Какую вахту беру</p>
+      <p class="tap">Нажми на свой вариант</p>
       <div class="shifts" role="group" aria-label="Длительность вахты" id="segShifts">
         <button type="button" data-shifts="30" data-cal="35" aria-pressed="true"><b>30</b><i>рабочих дней</i></button>
         <button type="button" data-shifts="60" data-cal="70" aria-pressed="false"><b>60</b><i>рабочих дней</i></button>
@@ -431,7 +450,8 @@
 
     <div class="field">
       <span class="stepnum">Шаг 2</span>
-      <p class="q">Мой уровень на складе</p>
+      <p class="q">Выбери свой уровень на складе</p>
+      <p class="tap">Нажми - цифра пересчитается сразу</p>
       <div class="levels" role="group" aria-label="Уровень работы" id="segLevels">
         <button type="button" data-rate="4500" aria-pressed="false">
           <span><b>Старт, почасовая</b><i>простые операции, оплата за отработанные часы</i></span>
