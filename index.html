@@ -28,6 +28,7 @@
     --ink-2:#BCC3CB;
     --muted:#848D97;
     --red:#E11B26;
+    --yellow:#F5C518; --yellow-bright:#FFD43B;
     --red-bright:#FF3E49;
     --red-soft:rgba(225,27,38,.16);
     --shadow:0 2px 4px rgba(0,0,0,.35),0 14px 34px rgba(0,0,0,.45);
@@ -50,7 +51,7 @@
   .whois{color:var(--muted);font-size:14.5px;margin:0 0 26px;line-height:1.45}
   .need{font-family:Oswald,sans-serif;font-weight:600;text-transform:uppercase;
     font-size:clamp(25px,6.8vw,31px);line-height:1;letter-spacing:.03em;
-    color:var(--red-bright);margin:0 0 13px}
+    color:var(--yellow-bright);margin:0 0 13px}
   .roles{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px;padding:0;list-style:none}
   .roles li{font-family:Oswald,sans-serif;font-size:16px;text-transform:uppercase;letter-spacing:.04em;
     border:1px solid var(--line-2);color:var(--ink);padding:6px 11px}
@@ -92,23 +93,23 @@
   .swrow{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
   .swrow > div{padding:12px 14px;font-size:15px;line-height:1.4;background:var(--surface)}
   .swrow .now{color:var(--muted)}
-  .swrow .then{color:var(--ink);font-weight:500;box-shadow:inset 3px 0 0 var(--red)}
+  .swrow .then{color:var(--ink);font-weight:500;box-shadow:inset 3px 0 0 var(--yellow)}
   .swhead{background:var(--surface-2)!important;font-family:Oswald,sans-serif;text-transform:uppercase;
     font-size:12px;letter-spacing:.11em;font-weight:500!important}
   .swhead.now{color:var(--muted)!important}
-  .swhead.then{color:var(--red-bright)!important}
+  .swhead.then{color:var(--yellow-bright)!important}
 
   /* ---------- calculator ---------- */
   .calc{background:var(--surface);border:1px solid var(--line);margin:0 -20px;padding:28px 20px 30px;
     border-left:0;border-right:0}
-  .calc h2{font-family:Oswald,sans-serif;font-weight:600;text-transform:uppercase;font-size:24px;
-    letter-spacing:.02em;margin:0 0 4px;color:#FFFFFF}
+  .calc h2{font-family:Oswald,sans-serif;font-weight:600;text-transform:uppercase;font-size:25px;
+    letter-spacing:.02em;margin:0 0 4px;color:var(--yellow-bright)}
   .calc .hint{color:var(--ink-2);font-size:15.5px;margin:0 0 24px}
-  .uline{border-bottom:3px solid var(--red);padding-bottom:4px;display:inline-block}
+  .uline{border-bottom:3px solid var(--yellow);padding-bottom:4px;display:inline-block}
   .btnrow{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-2);margin-top:14px}
   .btnrow .copybtn{margin-top:0;border-top:0}
   .stepnum{font-family:Oswald,sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--red-bright);display:block;margin-bottom:6px}
+    color:var(--yellow-bright);display:block;margin-bottom:6px}
   .field{margin-bottom:24px}
   .field > .q{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:18px;
     letter-spacing:.03em;color:#FFFFFF;margin:0 0 12px}
@@ -169,8 +170,8 @@
   .ladder .step{font-weight:500;font-size:16px}
   .ladder .step span{display:block;font-size:13.5px;color:var(--muted);font-weight:400;margin-top:2px}
   .ladder .rate{font-family:Oswald,sans-serif;font-variant-numeric:tabular-nums;font-size:19px;
-    color:var(--red-bright);white-space:nowrap}
-  .ladder li.top{background:var(--surface-2);border-left:4px solid var(--red)}
+    color:var(--yellow-bright);white-space:nowrap}
+  .ladder li.top{background:var(--surface-2);border-left:4px solid var(--yellow)}
 
   .howbox{background:var(--sunk);border:1px solid var(--line);padding:16px 18px;margin-top:16px}
   .howbox h3{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:15px;
@@ -194,7 +195,7 @@
   .grid3 .shot{aspect-ratio:3/5}
   .grid2 .shot{aspect-ratio:3/4}
   .shot img{display:block;width:100%;height:100%;object-fit:contain}
-  .shot figcaption{position:absolute;left:0;bottom:0;background:var(--red);color:#FFFFFF;
+  .shot figcaption{position:absolute;left:0;bottom:0;background:#15181C;color:var(--yellow);
     font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.08em;
     font-size:11px;padding:5px 10px}
 
@@ -208,7 +209,7 @@
 
   .tplbox{margin-top:22px;background:var(--sunk);border:1px solid var(--line-2)}
   .tplhead{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:12px;
-    color:var(--red-bright);padding:12px 15px 0}
+    color:var(--yellow-bright);padding:12px 15px 0}
   .tplbox pre{margin:10px 0 0;padding:0 15px;font-family:"Golos Text",sans-serif;font-size:15px;
     color:var(--ink);white-space:pre-wrap;line-height:1.6}
   .copybtn{display:block;width:100%;margin-top:14px;background:transparent;color:var(--red-bright);
@@ -223,13 +224,15 @@
   .sendbtn:focus-visible{outline:3px solid #FFFFFF;outline-offset:-3px}
 
   /* ---------- takeover strip ---------- */
-  .takeover{background:var(--red);color:#FFFFFF;margin:0 -20px;padding:28px 20px 26px}
+  .takeover{background:var(--yellow);color:#15181C;margin:0 -20px;padding:28px 20px 26px}
   .takeover .cap{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.03em;
     font-size:clamp(23px,6.5vw,30px);line-height:1.1;font-weight:600;
     color:#15181C;margin:0 0 18px;text-wrap:balance}
-  .takeover ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
-  .takeover li{background:#15181C;border:2px solid rgba(255,255,255,.9);color:#FFFFFF;
-    padding:13px 15px;font-size:17px;font-weight:600;line-height:1.3}
+  .takeover ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+  .takeover li{background:#15181C;color:#FFFFFF;padding:13px 15px;font-size:16.5px;
+    font-weight:600;line-height:1.3;display:grid;grid-template-columns:auto 1fr;
+    gap:13px;align-items:center}
+  .takeover li svg{width:24px;height:24px;flex:none;display:block}
   .takeout{margin:18px 0 0;font-size:15px;color:#15181C;font-weight:600}
 
   /* ---------- info list widget ---------- */
@@ -238,7 +241,7 @@
   .infolist li{background:var(--surface);padding:14px 16px;display:grid;
     grid-template-columns:150px 1fr;gap:14px;align-items:start}
   .infolist .k{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.05em;
-    font-size:15px;color:var(--red-bright);line-height:1.25}
+    font-size:15px;color:var(--yellow-bright);line-height:1.25}
   .infolist .val{font-size:16px;color:var(--ink-2);line-height:1.45}
   .infolist .val b{color:#FFFFFF;font-weight:600}
   .infolist li.big .k{font-size:18px;color:#FFFFFF}
@@ -247,10 +250,10 @@
   }
 
   /* ---------- callout ---------- */
-  .callout{margin-top:18px;background:var(--surface-2);border:2px solid var(--red);
+  .callout{margin-top:18px;background:var(--surface-2);border-left:4px solid var(--yellow);border-top:1px solid var(--line-2);border-right:1px solid var(--line-2);border-bottom:1px solid var(--line-2);
     padding:16px 18px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start}
   .callout .bang{font-family:Oswald,sans-serif;font-weight:700;font-size:26px;line-height:1;
-    color:#FFFFFF;background:var(--red);width:38px;height:38px;display:grid;place-items:center;flex:none}
+    color:#15181C;background:var(--yellow);width:38px;height:38px;display:grid;place-items:center;flex:none}
   .callout h3{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:17px;
     letter-spacing:.05em;margin:0 0 7px;color:#FFFFFF}
   .callout p{font-size:15.5px;color:var(--ink-2);margin:0}
@@ -272,7 +275,7 @@
   .incl .what{font-weight:500}
   .incl .what span{display:block;font-size:13.5px;color:var(--muted);font-weight:400;margin-top:2px}
   .incl .tag{font-family:Oswald,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.08em;
-    color:#FFFFFF;background:var(--red);padding:4px 9px;white-space:nowrap}
+    color:#15181C;background:var(--yellow);padding:4px 9px;white-space:nowrap}
 
   .facts{display:flex;flex-direction:column;gap:14px;margin:0}
   .fact{display:grid;grid-template-columns:118px 1fr;gap:14px;align-items:start}
@@ -290,7 +293,7 @@
   .know{background:var(--sunk);border:0;padding:32px 20px;margin:34px -20px}
   .know ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px}
   .know li{padding-left:20px;position:relative;color:var(--ink-2)}
-  .know li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:2px;background:var(--red)}
+  .know li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:2px;background:var(--yellow)}
   .know li b{color:#FFFFFF;font-weight:600}
 
   /* ---------- faq ---------- */
@@ -299,7 +302,7 @@
   summary{cursor:pointer;padding:15px 28px 15px 0;position:relative;font-weight:600;list-style:none;color:var(--ink)}
   summary::-webkit-details-marker{display:none}
   summary::after{content:"+";position:absolute;right:4px;top:13px;font-family:Oswald,sans-serif;
-    font-size:22px;color:var(--red-bright);line-height:1}
+    font-size:22px;color:var(--yellow-bright);line-height:1}
   details[open] summary::after{content:"−"}
   details p{padding:0 0 16px;color:var(--ink-2);font-size:16px}
   summary:focus-visible{outline:2px solid var(--red-bright);outline-offset:2px}
@@ -382,17 +385,16 @@
   </header>
 </div>
 
-<div class="stripe"></div>
 
 <div class="wrap">
   <div class="takeover">
     <p class="cap">Всё это компания берёт на себя</p>
     <ul>
-      <li>Жильё</li>
-      <li>Комплексные обеды на смене</li>
-      <li>Форма и обувь</li>
-      <li>Медосмотр и обучение на технику</li>
-      <li>Работа в помещении, а не на улице</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="#F5C518" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V21h13V9.5"/><path d="M9.5 21v-6h5v6"/></svg><span>Жильё</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="#F5C518" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3v8a3 3 0 0 0 6 0V3"/><path d="M7 11v10"/><path d="M17 3c-2 1.5-2.6 4-2.6 6.5 0 1.6.9 2.5 2.6 2.5"/><path d="M17 12v9"/></svg><span>Комплексные обеды на смене</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="#F5C518" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a7 7 0 0 0-7 7v3h14v-3a7 7 0 0 0-7-7z"/><path d="M3 13h18"/><path d="M12 3v3.5"/></svg><span>Форма и обувь</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="#F5C518" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 7l9 4 9-4-9-4z"/><path d="M7 9.5V15c0 1.7 2.2 3 5 3s5-1.3 5-3V9.5"/><path d="M21 7v6"/></svg><span>Медосмотр и обучение на технику</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="#F5C518" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10.5V20h13v-9.5"/><path d="M9.5 16.5h5"/><path d="M12 13.5v6"/></svg><span>Работа в помещении, а не на улице</span></li>
     </ul>
     <p class="takeout">Из заработка за это не удерживают ни рубля</p>
   </div>
