@@ -43,6 +43,8 @@
   .eyebrow{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.16em;
     font-size:12px;font-weight:500;color:var(--red-bright);margin:0 0 10px}
   mark{background:var(--red-soft);color:var(--ink);padding:1px 5px;font-weight:600}
+  .arrive{font-size:18px;margin:0 0 14px}
+  .arrive mark{padding:4px 9px}
 
   /* ---------- hero ---------- */
   .hero{padding:34px 0 28px}
@@ -279,6 +281,7 @@
   .infolist .val{font-size:16px;color:var(--ink-2);line-height:1.45}
   .infolist .val b{color:#FFFFFF;font-weight:600}
   .infolist li.big .k{font-size:18px;color:#FFFFFF}
+  .infolist li.nofee{background:var(--surface-2);box-shadow:inset 4px 0 0 var(--red)}
   @media (max-width:480px){
     .infolist li{grid-template-columns:1fr;gap:4px}
   }
@@ -556,6 +559,7 @@
 
   <section>
     <h2 class="sec">Жильё</h2>
+    <p class="arrive"><mark>Оформление и заселение - в день приезда</mark></p>
     <p>Компания селит сотрудников сама и полностью за свой счёт. Хостел в Московской области, комната на 6-8 человек, в каждой комнате <mark>холодильник, туалет и душ</mark>. Отдельно - общая кухня с плитами и столовая, где можно готовить своё</p>
     <p>На смене компания кормит комплексным обедом. Завтрак и ужин - на свой вкус и за свой счёт, для этого и есть кухня. Постельное бельё меняют <mark>каждые 7 дней</mark>. Из заработка за проживание не удерживают ни рубля</p>
     <div class="grid2">
@@ -575,8 +579,9 @@
   <section>
     <h2 class="sec">Документы</h2>
     <ul class="infolist">
-      <li class="big"><span class="k">Граждане РФ</span><span class="val">Договор ГПХ. Нужны паспорт, СНИЛС и ИНН</span></li>
-      <li class="big"><span class="k">Другие страны</span><span class="val"><b>Казахстан и Киргизия - можно.</b> Трудовой договор оформляет компания, уведомление в МВД подаёт тоже она. Бегать по инстанциям не придётся</span></li>
+      <li class="big"><span class="k">Граждане РФ</span><span class="val">Договор ГПХ. Нужны паспорт, СНИЛС, ИНН и фото для пропуска</span></li>
+      <li class="big"><span class="k">Другие страны</span><span class="val"><b>Казахстан, Киргизия и др.</b> Трудовой договор оформляет компания, уведомление в МВД подаёт тоже она. Бегать по инстанциям не придётся</span></li>
+          <li class="big nofee"><span class="k">Бесплатно</span><span class="val"><b>Денег за оформление не берём</b></span></li>
     </ul>
   </section>
 
